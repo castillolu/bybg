@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	color:#999;
+	font-size:16px;
+	padding:0px;
+	margin:0px;
+	text-align:;
+	font-family:Verdana, Geneva, sans-serif;
+	
+	}
+div p{ 
+    font-size: 0.8em;
+    margin-bottom: 0.1em;
+	}
+@font-face {
+    font-family: 'dosisbold';
+    src: url('dosis-bold-webfont.eot');
+    src: url('dosis-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dosis-bold-webfont.woff') format('woff'),
+         url('dosis-bold-webfont.ttf') format('truetype'),
+         url('dosis-bold-webfont.svg#dosisbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisregular';
+    src: url('dosis-regular-webfont.eot');
+    src: url('dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dosis-regular-webfont.woff') format('woff'),
+         url('dosis-regular-webfont.ttf') format('truetype'),
+         url('dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1{	
+	    color: #2691A4;
+    font-family: "dosisregular";
+    font-size: 2em;
+    margin-bottom: 0.5em;
+	}
+h2{	
+	color: #DC6C0B;
+    font-family: "dosisregular";
+    font-size: 1.5em;
+    margin: 0;
+	}
+h3{  
+      display: block;
+    font-family: "dosisregular";
+    font-size: 1.2em;
+    line-height: 1.15em;
+    margin: 0 0 0.5em;
+	
+	}
+
+.subtitulonaranja{
+	color:#F99133;
+	}
+
+#container{
+	max-width:100%;
+	margin:2em auto 0 auto;
+	padding:0 2em;
+	text-align:left;
+	}	
+
+#logo{
+	
+	width:113px;
+	height:67px;
+	vertical-align:top;
+	}
+
+.center_div {
+    text-align: center;
+}
+.left_div{
+	width:auto;
+	display:inline-block!important;
+	}
+.left_div img{
+	max-width:100%;
+	
+	}
+.right_div{
+	display: inline-block !important;
+	width:auto;
+    margin-left: 1.8em;
+    vertical-align: top;
+	text-align:left;
+	}
+.right_div img{
+	max-width:100%;
+	
+	}
+
+
+.vineta{
+	 display: inline-block;
+    height: 21px;
+    margin-top: 1em;
+    vertical-align: top;
+    width: 19px;
+	}
+
+.naranja{
+	background-image:url(../images/vinetanaranja.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	}
+
+.azul{
+	background-image:url(../images/vinetaazul.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	}
+.art_text {
+    display: inline-block;
+    margin-left: 0.25em;
+    vertical-align: top;
+}
+
+
+.resalte_naranja{
+	color:#DC6C0B;
+	font-size:1.1em;
+	font-weight:bold;
+	}
+.btn_register{
+	text-align:right;
+	margin-top:16px;
+	}
+	
+.btn_register div{
+	background-color:#DC6C0B;
+	text-align:center;
+	color:#FFF;
+	width:auto;
+	padding:10px;
+	float:right;
+	}

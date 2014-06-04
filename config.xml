@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+   xmlns:gap = "http://phonegap.com/ns/1.0"
+   id        = "Be you be Global"
+   version    = "1.0.0">
+
+   <name>Be you be global</name>
+   <description>Be you be global, online english course.</description>
+   <author href="https://www.nettingsolutions.com" email="pgutierrez@nettingsolutions.com">Pedro Gutierrez</author>
+
+
+   <icon src="icon.png" />
+   <icon gap:density="mdpi" gap:platform="android" src="res/drawable-mdpi/ic_launcher.png" />
+   <icon gap:density="hdpi" gap:platform="android" src="res/drawable-hdpi/ic_launcher.png" />
+   <icon gap:density="xhdpi" gap:platform="android" src="res/drawable-hxdpi/ic_launcher.png" />
+
+
+</widget>
