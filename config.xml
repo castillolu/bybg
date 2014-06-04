@@ -10,16 +10,19 @@
    <author href="https://www.nettingsolutions.com" email="pgutierrez@nettingsolutions.com">Pedro Gutierrez</author>
 
 
+
+   <gap:plugin name="org.apache.cordova.device" />
+
+   <preference name="phonegap-version"           value="3.4.0" />          <!-- all: current version of PhoneGap -->
+   <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+   <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+   <preference name="fullscreen"                 value="true" />
+
+   <gap:platform name="android" />
+
    <icon src="icon.png" />
    <icon gap:density="mdpi" gap:platform="android" src="res/drawable-mdpi/ic_launcher.png" />
    <icon gap:density="hdpi" gap:platform="android" src="res/drawable-hdpi/ic_launcher.png" />
    <icon gap:density="xhdpi" gap:platform="android" src="res/drawable-hxdpi/ic_launcher.png" />
-
-   <plugins>
-       <plugin name="Device" value="org.apache.cordova.Device"/>
-   </plugins>
-
-   <gap:platform name="android" />
-
 
 </widget>
