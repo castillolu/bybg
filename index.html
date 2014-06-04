@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Be you be global</title>
     <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/phonegap-1.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
     <script language="javascript" type="text/javascript">
         function postvalues() {
             document.forms[0].action = 'http://www.beyoubeglobal.com/cms/informacion/tabletplanet';
@@ -28,7 +28,8 @@
           $("input[name='Version']").val(device.version);
     }
 
-    $(document).on("ready", onDeviceReady);
+    //$(document).on("ready", onDeviceReady);
+    document.addEventListener('deviceready', onDeviceReady, false);
 
 
     </script>
