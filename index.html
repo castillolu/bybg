@@ -11,7 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Be you be global</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/phonegap-1.0.0.js"></script>
     <script language="javascript" type="text/javascript">
         function postvalues() {
@@ -28,7 +28,7 @@
           $("input[name='Version']").val(device.version);
     }
 
-    document.addEventListener("deviceready", onDeviceReady, false);
+    $(document).on("ready", onDeviceReady);
 
 
     </script>
@@ -85,11 +85,11 @@
              <form id="form2" runat="server" method="Post" action="">
               <div class="btn_register">
                 <div><a href='javascript:postvalues();'>Registrarme</a>
-                  <input type="hidden" name="Name" value="device.name" />
-                  <input type="hidden" name="Phonegap" value="device.phonegap" />
-                  <input type="hidden" name="Platform" value="device.platform" />
-                  <input type="hidden" name="Uuid" value="device.uuid" />
-                  <input type="hidden" name="Version" value="device.version" /> 
+                  <input type="hidden" name="Name" />
+                  <input type="hidden" name="Phonegap" />
+                  <input type="hidden" name="Platform" />
+                  <input type="hidden" name="Uuid" />
+                  <input type="hidden" name="Version" /> 
                 </div>
               </div>
             </form>
