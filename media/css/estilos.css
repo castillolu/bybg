@@ -9,10 +9,7 @@ body{
 	font-family:Verdana, Geneva, sans-serif;
 	
 	}
-div p{ 
-    font-size: 0.8em;
-    margin-bottom: 0.1em;
-	}
+
 @font-face {
     font-family: 'dosisbold';
     src: url('dosis-bold-webfont.eot');
@@ -59,6 +56,9 @@ h3{
     margin: 0 0 0.5em;
 	
 	}
+img {
+    max-width: 100%;
+}
 
 .subtitulonaranja{
 	color:#F99133;
@@ -66,23 +66,23 @@ h3{
 
 #container{
 	max-width:100%;
-	margin:2em auto 0 auto;
+	margin:-1em auto 0 auto;
 	padding:0 2em;
 	text-align:left;
 	}	
 
 #logo{
-	
-	width:113px;
-	height:67px;
+	position:fixed;
+	top:0;
+	left:0px;
 	vertical-align:top;
 	}
 
 .center_div {
-    text-align: center;
+    text-align: left;
 }
 .left_div{
-	width:auto;
+	width:100%;
 	display:inline-block!important;
 	}
 .left_div img{
@@ -105,7 +105,7 @@ h3{
 .vineta{
 	 display: inline-block;
     height: 21px;
-    margin-top: 1em;
+   margin-right: 0.5em;
     vertical-align: top;
     width: 19px;
 	}
@@ -122,7 +122,6 @@ h3{
 	background-position:left;
 	}
 .art_text {
-    display: inline-block;
     margin-left: 0.25em;
     vertical-align: top;
 }
@@ -134,8 +133,9 @@ h3{
 	font-weight:bold;
 	}
 .btn_register{
-	text-align:right;
-	margin-top:16px;
+	 display: inline-block;
+    float: right;
+    vertical-align: bottom;
 	}
 	
 .btn_register div{
@@ -146,3 +146,4 @@ h3{
 	padding:10px;
 	float:right;
 	}
+	
