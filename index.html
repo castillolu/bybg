@@ -3,104 +3,96 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	
-	<!-- Meta Tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Be you be global</title>
-    <script type="text/javascript" charset="utf-8" src="js/phonegap-1.0.0.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript">
-        function postvalues() {
-            document.forms[0].action = 'http://www.beyoubeglobal.com/cms/informacion/tabletplanet';
-            document.forms[0].submit();
-            return true;
-        }
+	<head>
+		<!-- Meta Tags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>Be you be global</title>
+		<link href="media/css/estilos.css" rel="stylesheet" type="text/css" />
+	</head>
 
-        function onDeviceReady() {
-          $("input[name='Name']").val(device.name);
-          $("input[name='Phonegap']").val(device.phonegap);
-          $("input[name='Platform']").val(device.platform);
-          $("input[name='Uuid']").val(device.uuid);
-          $("input[name='Version']").val(device.version);
-    }
+	<body>
 
-    //$(document).on("ready", onDeviceReady);
-    document.addEventListener('deviceready', onDeviceReady, false);
+		<header style="width:100%">
+			<div id="logo"><img src="media/images/logo.png" alt="BeYouBeGlobal"></div>
+			<div><img src="media/images/background_01.jpg" alt="BeYouBeGlobal"></div>
+		</header>
 
+		<div id="container">
+			<section>
+				<h1>¡Somos BeYouBeGlobal!</h1>
+					<div >
+						<p>Desarrolla la seguridad y la confianza que necesitas para atreverte a hablar en inglés. Te regalamos:</p>
+					</div>
+			</section>
+				 
+			<section>
+				<article>
+					<div class="articulo">
+						<div class="art_text">
+							<p>
+								<div class="vineta naranja"></div>
+								Dos meses de acceso gratuito.
+							</p>
+						</div>
+					</div>
+					<div class="articulo">
+						<div class="art_text">
+							<p>
+								<div class="vineta naranja"></div>
+								Una evaluación.
+							</p>
+						</div>
+					</div>
+					<div class="articulo">
+						<div class="art_text">
+							<p><div class="vineta naranja"></div>Dos tutorías.</p>
+						</div>
+					</div>
+				   <div class="articulo" id="art_final">
+						<div class="art_text">
+							<p><div class="vineta naranja"></div>Dos grabaciones con retroalimentación de un tutor que te aconsejará como mejorar tu acento.</p>
+						</div>
+					</div>
+					<form id="form2" method="post" action="http://www.beyoubeglobal.com/cms/informacion/tabletplanet">
+						<div class="btn_register">
+							<div>
+								<a href="#" id="send_register">Registrarme</a>
+								<input type="hidden" name="Name" />
+								<input type="hidden" name="Phonegap" />
+								<input type="hidden" name="Platform" />
+								<input type="hidden" name="Uuid" />
+								<input type="hidden" name="Version" /> 
+							</div>
+						</div>
+					</form>
+				</article>
+			</section>
+		</div>
+		<script type="text/javascript" charset="utf-8" src="js/phonegap-1.0.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript">
 
-    </script>
-<link href="media/css/estilos.css" rel="stylesheet" type="text/css">
-</head>
+			function onDeviceReady() {
+				$("input[name='Name']").val(device.name);
+				$("input[name='Phonegap']").val(device.phonegap);
+				$("input[name='Platform']").val(device.platform);
+				$("input[name='Uuid']").val(device.uuid);
+				$("input[name='Version']").val(device.version);
+				
+				$("#send_register").on("click", sendData);
+			}
+			
+			function sendData(){
+				$("#form2").submit();
+			}
 
-<body>
+			$(document).on("deviceready", onDeviceReady);
+//			document.addEventListener('deviceready', onDeviceReady, false);
 
-<header style="width:100%">
-    <div id="logo"><img src="media/images/logo.png" alt="BeYouBeGlobal"></div>
-<div><img src="media/images/background_01.jpg" alt="BeYouBeGlobal"></div>
-    </header>
-
-	<div id="container">
-    
-    
-    <section>
-             <h1>¡Somos BeYouBeGlobal!            </h1>
-			  <div >
-               <p>Desarrolla la seguridad y la confianza que necesitas para atreverte a hablar en inglés. Te regalamos:</p>
-             </div>
-              	
-             
-      </section>
-         
-         <section>
-           
-                	<article>
-                    	<div class="articulo">
-                   		  
-                            <div class="art_text">
-                              <p> <div class="vineta naranja"></div>Dos meses de acceso gratuito.</p></div>
-                        </div>
-                        <div class="articulo">
-                        	
-                            <div class="art_text">
-                              <p><div class="vineta naranja"></div>Una evaluación.</p></div>
-                        </div>
-                        <div class="articulo">
-                        	
-                            <div class="art_text">
-                              <p><div class="vineta naranja"></div>Dos tutorías.</p></div>
-                        </div>
-                       
-                       <div class="articulo" id="art_final">
-                 
-                            <div class="art_text">
-                              <p><div class="vineta naranja"></div>Dos grabaciones con retroalimentación de un tutor que te aconsejará como mejorar tu acento.</p>
-                            </div>
-                      </div>
-                      <form id="form2" runat="server" method="Post" action="">
-              <div class="btn_register">
-                <div><a href='javascript:postvalues();'>Registrarme</a>
-                  <input type="hidden" name="Name" />
-                  <input type="hidden" name="Phonegap" />
-                  <input type="hidden" name="Platform" />
-                  <input type="hidden" name="Uuid" />
-                  <input type="hidden" name="Version" /> 
-                </div>
-              </div>
-            </form>
-      
-    </section>
-         <section></section>
-
-        
-      </div>
-      
-
-
-      
-</body>
+		</script>
+		
+	</body>
 </html>
