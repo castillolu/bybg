@@ -5,22 +5,20 @@
     id              = "com.beyoubeglobal"
     version         = "1.0.0">
 
-   <name>Be you be global</name>
-   <description>Be you be global, online english course.</description>
-   <author href="https://www.nettingsolutions.com" email="pgutierrez@nettingsolutions.com">Pedro Gutierrez</author>
+	<name>Be you be global</name>
+	<description>Be you be global, online english course.</description>
+	<author href="https://www.nettingsolutions.com" email="pgutierrez@nettingsolutions.com">Pedro Gutierrez</author>
 
+	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 
+	<preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
+	<preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+	<preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+	<preference name="fullscreen"                 value="true" />
 
-   <gap:plugin name="org.apache.cordova.device" />
+	<gap:platform name="android" />
 
-   <preference name="phonegap-version"           value="3.4.0" />          <!-- all: current version of PhoneGap -->
-   <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-   <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-   <preference name="fullscreen"                 value="true" />
-
-   <gap:platform name="android" />
-
-   <icon src="icon.png" />
+	<icon src="icon.png" />
     <icon src="res/drawable-mdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/drawable-hdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="res/drawable-hxdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xhdpi" />
